@@ -17,6 +17,7 @@ The repository also contains a python program that implements a Vignere cipher. 
 
 ## Authors 
 [Claire Quigley](https://github.com/alcluith) <br/>
+Rose <br/>
 
 
 ## Licence

@@ -107,7 +107,7 @@ def encrypt(msg, shiftValue):
 # main program
 ############################################
 def main():
-	print "Welcome to the E.V.I.L. Vigenere cipher program."
+	print "Welcome to the ' + EVIL_ORGANISATION + ' Vigenere cipher program."
 	#ask user if they want to encrypt or decrypt
 	direction = askUserVig()
 	print "first type in the message you want to " + direction + " in lower case letters > "
@@ -121,4 +121,5 @@ def main():
 	
 
 ALPHABET_SIZE=26
+EVIL_ORGANISATION = 'E.V.I.L.'
 main()

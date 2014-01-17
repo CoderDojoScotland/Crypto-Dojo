@@ -2,7 +2,7 @@ Crypto-Dojo
 =============
 
 Materials to support a cryptography themed dojo <br/>
-[Demo](http://coderdojo.co/stirling/)
+
 
 ## How to use 
 ...

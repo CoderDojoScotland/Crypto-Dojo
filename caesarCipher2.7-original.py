@@ -34,7 +34,7 @@ def getKey():
   cipherKey = 0
   while(invalidKey):
                   print "please enter the key you want to use (type a number between 1 and 25 and press enter)"
-                  cipherKey= raw_input()
+                  cipherKey = raw_input()
                   #added call to method which checks
                   #if the number entered is a valid key, if it is
                   #then cast to an int and set invalidKey to be false
@@ -57,7 +57,7 @@ def isValidKey(val):
         #if it is, return true, else return false
         try:
                 intVal=int(val)
-                if((intVal >= 1) and (intVal <=25)):
+                if((intVal >= 1) and (intVal <= 25)):
                     return True
                 else:
                     return False
@@ -82,16 +82,16 @@ def force(msg):
           ##################################################
           for letter in msg:
                 if(letter == ' '):
-                                result+= letter
+                                result += letter
                 else:
                                 num = ord(letter)
                                 num -= int(shiftValue)
                                 if(num > ord('z')):
-                                                num -=ALPHABET_SIZE
+                                                num -= ALPHABET_SIZE
                                 if(num < ord('a')):
-                                                num +=ALPHABET_SIZE
+                                                num += ALPHABET_SIZE
                                 decryptedLetter = chr(num)
-                                result+= decryptedLetter
+                                result += decryptedLetter
           ######################
           # inner loop ends here
           #######################
@@ -107,16 +107,16 @@ def decrypt(msg, shiftValue):
         result = ""
         for letter in msg:
                 if(letter == ' '):
-                        result+= letter
+                        result += letter
                 else:
                         num = ord(letter)
                         num -= shiftValue
                         if(num > ord('z')):
-                           num -=ALPHABET_SIZE
+                           num -= ALPHABET_SIZE
                         if(num < ord('a')):
-                           num +=ALPHABET_SIZE
+                           num += ALPHABET_SIZE
                         decryptedLetter = chr(num)
-                        result+= decryptedLetter
+                        result += decryptedLetter
         print result
 
 
@@ -126,7 +126,7 @@ def encrypt(msg, shiftValue):
         result = ""
         for letter in msg:
                 if(letter == ' '):
-                        result+= letter
+                        result += letter
                 else:
                         num = ord(letter)
                         num += shiftValue
@@ -135,7 +135,7 @@ def encrypt(msg, shiftValue):
                         if(num < ord('a')):
                            num += ALPHABET_SIZE     
                         encryptedLetter = chr(num)
-                        result+=encryptedLetter
+                        result += encryptedLetter
         print result
 
 #get those who struggle to switch the value hard code, those who do well write a function to ask for shift value		
